@@ -12,7 +12,7 @@ import { ApolloClient } from 'apollo-boost';
 
 
 const httpLink = createHttpLink({
-  uri: 'https://countries.trevorblades.com/'
+  uri: 'https://rickandmortyapi.com/graphql'
 });
 
 const cache = new InMemoryCache();

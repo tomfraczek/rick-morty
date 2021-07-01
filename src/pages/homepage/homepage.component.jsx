@@ -5,10 +5,14 @@ import { gql } from 'apollo-boost';
 
 const GET_CONTINENTS = gql`
 {
-  continents{
-    name
-    code
-  }
+    characters(page: 1) {
+        info {
+          count
+        }
+        results {
+          name
+        }
+      }
 }
 `;
 
