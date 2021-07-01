@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import media, {GlobalWidth} from '../global/breakpoints';
+import { GlobalWidth } from '../global/styles/breakpoints';
 
 export const AppContainer = styled.div`
     margin: auto;

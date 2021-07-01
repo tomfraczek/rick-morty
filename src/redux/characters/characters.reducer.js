@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   errorMessage: undefined,
 };
 
-const moviesReducer = (state = INITIAL_STATE, action) => {
+const charactersReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case CharactersActionTypes.FETCH_CHARACTERS_START:
       return {
@@ -30,4 +30,4 @@ const moviesReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default moviesReducer;
+export default charactersReducer;

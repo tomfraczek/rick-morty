@@ -7,11 +7,11 @@ import charactersReducer from './characters/characters.reducer';
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['data']
+    whitelist: ['characters']
 }
 
 const rootReducer = combineReducers({
-    data: charactersReducer,
+    characters: charactersReducer,
 }) 
 
 export default persistReducer(persistConfig, rootReducer);

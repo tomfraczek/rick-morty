@@ -22,7 +22,6 @@ export const fetchCharactersStartAsync = () => {
     fetch('https://rickandmortyapi.com/api/character')
     .then(response => response.json())
     .then(data => {
-      console.log(data);
       dispatch(fetchCharactersSuccess(data));
     })
     .catch(error => dispatch(fetchCharactersFailure(error.message)));
